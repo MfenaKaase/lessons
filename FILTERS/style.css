@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.item {
+    display: grid;
+    place-items: center;
+    /* background-color: orangered; */
+    background-image: url(./anh-nguyen-kcA-c3f_3FE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background-blend-mode: multiply; */
+    transition: transform 1s;
+}
+
+.item:hover {
+    cursor: pointer;
+    transform: scale(50%);
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+.bright {
+    filter: brightness(700%);
+}
+
+.contrast {
+    filter: contrast(150%);
+
+}
+
+.gray {
+    filter: grayscale(100%);
+}
+
+.sepia {
+    filter:sepia(50%)
+}
